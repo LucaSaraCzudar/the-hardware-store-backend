@@ -7,21 +7,23 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-class Product {
+public class Product {
 
     private @Id @GeneratedValue Long id;
     private String name;
-    private Integer price;
+    private Float price;
     private ProductType productType;
     private String description;
     private String imageBase64;
 
     public Product() {}
 
-    public Product(String name, Integer price, ProductType productType) {
+    public Product(String name, Float price, ProductType productType, String description, String imageBase64) {
         this.name = name;
         this.price = price;
         this.productType = productType;
+        this.description = description;
+        this.imageBase64 = imageBase64;
     }
 
     public Long getId() {
@@ -32,7 +34,7 @@ class Product {
         return this.name;
     }
 
-    public Integer getPrice() {
+    public Float getPrice() {
         return this.price;
     }
 
@@ -56,7 +58,7 @@ class Product {
         this.name = name;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Float price) {
         this.price = price;
     }
 
