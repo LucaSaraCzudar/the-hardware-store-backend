@@ -8,7 +8,7 @@ import java.util.Objects;
 
 @MappedSuperclass
 public abstract class MinimalProduct {
-    protected @Id @GeneratedValue Long id;
+    protected @Id String id;
     protected String name;
     protected Float price;
 
@@ -19,7 +19,7 @@ public abstract class MinimalProduct {
         this.price = price;
     }
 
-    public Long getId() {
+    public String getId() {
         return this.id;
     }
 
@@ -31,7 +31,7 @@ public abstract class MinimalProduct {
         return this.price;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

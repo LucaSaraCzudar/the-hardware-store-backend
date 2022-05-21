@@ -22,7 +22,7 @@ public class ProductController {
 
 
     @GetMapping("/products/{id}")
-    Product getProduct(@PathVariable Long id) {
+    Product getProduct(@PathVariable String id) {
 
         return repository.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException(id));

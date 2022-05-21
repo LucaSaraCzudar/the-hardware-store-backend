@@ -3,10 +3,12 @@ package hardwarestore.product;
 import hardwarestore.common.MinimalProduct;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import java.util.UUID;
 
 @Entity
 public class Product extends MinimalProduct {
-
     private ProductType productType;
     private String description;
     private String imageBase64;
@@ -14,6 +16,7 @@ public class Product extends MinimalProduct {
     public Product() {}
 
     public Product(String name, Float price, ProductType productType, String description, String imageBase64) {
+        this.id = UUID.randomUUID().toString();
         this.name = name;
         this.price = price;
         this.productType = productType;

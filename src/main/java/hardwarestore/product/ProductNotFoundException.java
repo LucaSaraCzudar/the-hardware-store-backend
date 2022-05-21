@@ -1,7 +1,7 @@
 package hardwarestore.product;
 
 public class ProductNotFoundException extends RuntimeException {
-    ProductNotFoundException(Long id) {
+    ProductNotFoundException(String id) {
         super("Could not find product " + id);
     }
 }
