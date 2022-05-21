@@ -1,17 +1,12 @@
 package hardwarestore.product;
 
-import java.util.Objects;
+import hardwarestore.common.MinimalProduct;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
 @Entity
-public class Product {
+public class Product extends MinimalProduct {
 
-    private @Id @GeneratedValue Long id;
-    private String name;
-    private Float price;
     private ProductType productType;
     private String description;
     private String imageBase64;
@@ -26,18 +21,6 @@ public class Product {
         this.imageBase64 = imageBase64;
     }
 
-    public Long getId() {
-        return this.id;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public Float getPrice() {
-        return this.price;
-    }
-
     public ProductType getProductType() {
         return this.productType;
     }
@@ -50,18 +33,6 @@ public class Product {
         return this.imageBase64;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPrice(Float price) {
-        this.price = price;
-    }
-
     public void setProductType(ProductType productType) {
         this.productType = productType;
     }
@@ -72,26 +43,5 @@ public class Product {
 
     public void setImageBase64(String imageBase64) {
         this.imageBase64 = imageBase64;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (!(o instanceof Product Product))
-            return false;
-        return Objects.equals(this.id, Product.id) && Objects.equals(this.name, Product.name)
-                && Objects.equals(this.productType, Product.productType) && Objects.equals(this.price, Product.price);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(this.id, this.name, this.productType, this.price);
-    }
-
-    @Override
-    public String toString() {
-        return "Product{" + "id=" + this.id + ", name='" + this.name + '\'' + ", productType='"
-                 + this.productType + '\'' + ", price='" + this.price + '\'' + '}';
     }
 }
