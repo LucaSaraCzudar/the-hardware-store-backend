@@ -2,6 +2,7 @@ package hardwarestore.product;
 
 import hardwarestore.common.MinimalProduct;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,7 +11,9 @@ import java.util.UUID;
 @Entity
 public class Product extends MinimalProduct {
     private ProductType productType;
+    @Column(length=1000)
     private String description;
+    @Column(length=100000)
     private String imageBase64;
 
     public Product() {}
