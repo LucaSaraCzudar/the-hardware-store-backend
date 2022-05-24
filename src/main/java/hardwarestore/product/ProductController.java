@@ -2,9 +2,7 @@ package hardwarestore.product;
 
 import java.util.List;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ProductController {
@@ -26,5 +24,11 @@ public class ProductController {
 
         return repository.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException(id));
+    }
+
+    @GetMapping("/products/search")
+    @ResponseBody
+    public List<Product> findProductsByName(@RequestParam String name) {
+        return repository.findByNameLikeIgnoreCase("%" + name + "%");
     }
 }
