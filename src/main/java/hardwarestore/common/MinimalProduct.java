@@ -1,7 +1,5 @@
 package hardwarestore.common;
 
-
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.util.Objects;
