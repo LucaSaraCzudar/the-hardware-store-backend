@@ -1,4 +1,4 @@
-package hardwarestore.cart;
+package hardwarestore.cart.models;
 
 import hardwarestore.common.MinimalProduct;
 

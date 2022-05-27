@@ -1,4 +1,4 @@
-package hardwarestore.product;
+package hardwarestore.product.enums;
 
 public enum ProductType {
     RAM,

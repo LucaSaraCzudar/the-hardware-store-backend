@@ -1,11 +1,10 @@
-package hardwarestore.product;
+package hardwarestore.product.models;
 
 import hardwarestore.common.MinimalProduct;
+import hardwarestore.product.enums.ProductType;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import java.util.UUID;
 
 @Entity

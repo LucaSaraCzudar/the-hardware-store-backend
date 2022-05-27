@@ -1,6 +1,8 @@
 package hardwarestore.cart;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import hardwarestore.cart.exceptions.CartItemNotFoundException;
+import hardwarestore.cart.models.CartItem;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

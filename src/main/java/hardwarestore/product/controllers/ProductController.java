@@ -1,7 +1,9 @@
-package hardwarestore.product;
+package hardwarestore.product.controllers;
 
 import java.util.List;
 
+import hardwarestore.product.models.Product;
+import hardwarestore.product.repository.ProductRepository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

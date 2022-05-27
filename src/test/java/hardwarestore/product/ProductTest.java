@@ -1,5 +1,7 @@
 package hardwarestore.product;
 
+import hardwarestore.product.enums.ProductType;
+import hardwarestore.product.models.Product;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,5 +1,6 @@
 package hardwarestore.cart;
 
+import hardwarestore.cart.models.CartItem;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

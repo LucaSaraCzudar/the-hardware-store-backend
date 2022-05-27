@@ -1,5 +1,9 @@
-package hardwarestore.product;
+package hardwarestore.product.util;
 
+import hardwarestore.product.constants.ProductImage;
+import hardwarestore.product.enums.ProductType;
+import hardwarestore.product.models.Product;
+import hardwarestore.product.repository.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
