@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04beca1b-7bd4-4293-8f31-32caed71cb97" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cart/src/main/java/com/eureka/cart/models/MinimalProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/test/java/com/eureka/cart/CartApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/test/java/com/eureka/cart/controllers/CartControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/test/java/com/eureka/cart/models/CartItemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/src/test/java/com/eureka/cart/models/MinimalProductTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/test/java/com/eureka/products/ProductsApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/products/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hardwarestore/cart/controllers/CartController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hardwarestore/cart/exceptions/CartItemNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hardwarestore/cart/models/CartItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hardwarestore/cart/repository/CartItemRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hardwarestore/product/constants/ProductImage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hardwarestore/product/controllers/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hardwarestore/product/enums/ProductType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hardwarestore/product/models/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hardwarestore/product/repository/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hardwarestore/product/util/LoadDatabase.java" beforeDir="false" />
-    </list>
+    <list default="true" id="04beca1b-7bd4-4293-8f31-32caed71cb97" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -249,7 +229,7 @@
       <workItem from="1653492084960" duration="179000" />
       <workItem from="1653492291196" duration="257000" />
       <workItem from="1653645500927" duration="3364000" />
-      <workItem from="1653663664499" duration="3923000" />
+      <workItem from="1653663664499" duration="5511000" />
     </task>
     <servers />
   </component>

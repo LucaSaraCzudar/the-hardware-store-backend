@@ -7,6 +7,7 @@ import com.eureka.products.repository.ProductRepository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/")
 public class ProductController {
 
     private final ProductRepository repository;
@@ -15,12 +16,12 @@ public class ProductController {
         this.repository = repository;
     }
 
-    @GetMapping("/products")
+    @GetMapping("/")
     List<Product> getAllProducts() {
         return repository.findAll();
     }
 
-    @GetMapping("/products/filters")
+    @GetMapping("/filters")
     @ResponseBody
     public List<Product> filterProductsByName(@RequestParam String name) {
         return repository.findByNameLikeIgnoreCase("%" + name + "%");

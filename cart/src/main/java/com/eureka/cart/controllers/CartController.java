@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/")
 public class CartController {
 
     private final CartItemRepository repository;
@@ -16,24 +17,24 @@ public class CartController {
         this.repository = repository;
     }
 
-    @GetMapping("/cart-items")
+    @GetMapping("/")
     List<CartItem> getAllCartItems() {
         return repository.findAll();
     }
 
-    @PostMapping("/cart-items")
+    @PostMapping("/")
     CartItem addCartItem(@RequestBody CartItem cartItem) {
         return repository.save(cartItem);
     }
 
-    @GetMapping("/cart-items/{id}")
+    @GetMapping("/{id}")
     CartItem getCartItem(@PathVariable String id) {
 
         return repository.findById(id)
                 .orElseThrow(() -> new CartItemNotFoundException(id));
     }
 
-    @PutMapping("/cart-items/{id}")
+    @PutMapping("/{id}")
     CartItem updateCartItem(@RequestBody Integer quantity, @PathVariable String id) {
 
         return repository.findById(id)
@@ -44,7 +45,7 @@ public class CartController {
                 .orElseThrow(() -> new CartItemNotFoundException(id));
     }
 
-    @DeleteMapping("/cart-items/{id}")
+    @DeleteMapping("/{id}")
     void deleteCartItem(@PathVariable String id) {
         repository.deleteById(id);
     }
