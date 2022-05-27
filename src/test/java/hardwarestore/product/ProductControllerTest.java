@@ -35,25 +35,25 @@ class ProductControllerTest {
     @Test
     void findProductsByName() throws Exception {
         this.mockMvc.perform(MockMvcRequestBuilders
-                        .get("/products/search?name=logitech"))
+                        .get("/products/filters?name=logitech"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(2)))
                 .andExpect(jsonPath("$[0].name", Matchers.is("Logitech G502")))
                 .andExpect(jsonPath("$[1].name", Matchers.is("Logitech G502 Lightspeed")));
 
         this.mockMvc.perform(MockMvcRequestBuilders
-                        .get("/products/search?name=lightspeed"))
+                        .get("/products/filters?name=lightspeed"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)))
                 .andExpect(jsonPath("$[0].name", Matchers.is("Logitech G502 Lightspeed")));
 
         this.mockMvc.perform(MockMvcRequestBuilders
-                        .get("/products/search?name=cheese"))
+                        .get("/products/filters?name=cheese"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(0)));
 
         this.mockMvc.perform(MockMvcRequestBuilders
-                        .get("/products/search?name="))
+                        .get("/products/filters?name="))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(5)));
     }

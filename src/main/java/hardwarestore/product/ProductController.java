@@ -18,9 +18,9 @@ public class ProductController {
         return repository.findAll();
     }
 
-    @GetMapping("/products/search")
+    @GetMapping("/products/filters")
     @ResponseBody
-    public List<Product> findProductsByName(@RequestParam String name) {
+    public List<Product> filterProductsByName(@RequestParam String name) {
         return repository.findByNameLikeIgnoreCase("%" + name + "%");
     }
 }
